@@ -46,7 +46,7 @@ function UploadProductPage(props) {
         event.preventDefault();
 
         if (!Title || !Description || !Price || !Continent || Images.length === 0) {
-            return alert(" 모든 값을 넣어주셔야 합니다.")
+            return alert(" Enter all the values.")
         }
 
 
@@ -65,10 +65,10 @@ function UploadProductPage(props) {
         Axios.post('/api/product', body)
             .then(response => {
                 if (response.data.success) {
-                    alert('상품 업로드에 성공 했습니다.')
+                    alert('Uploaded successfully.')
                     props.history.push('/')
                 } else {
-                    alert('상품 업로드에 실패 했습니다.')
+                    alert('Upload failed.')
                 }
             })
     }
@@ -77,7 +77,7 @@ function UploadProductPage(props) {
     return (
         <div style={{ maxWidth: '700px', margin: '2rem auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                <h2> 여행 상품 업로드</h2>
+                <h2> Upload Travel Packages</h2>
             </div>
 
             <Form onSubmit={submitHandler}>
@@ -86,15 +86,15 @@ function UploadProductPage(props) {
 
                 <br />
                 <br />
-                <label>이름</label>
+                <label>Name</label>
                 <Input onChange={titleChangeHandler} value={Title} />
                 <br />
                 <br />
-                <label>설명</label>
+                <label>Description</label>
                 <TextArea onChange={descriptionChangeHandler} value={Description} />
                 <br />
                 <br />
-                <label>가격($)</label>
+                <label>Price($)</label>
                 <Input type="number" onChange={priceChangeHandler} value={Price} />
                 <br />
                 <br />
@@ -106,7 +106,7 @@ function UploadProductPage(props) {
                 <br />
                 <br />
                 <button type="submit">
-                    확인
+                    Confirm
                 </button>
             </Form>
 
