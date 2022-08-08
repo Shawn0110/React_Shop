@@ -6,6 +6,11 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  background: url("https://www.pixelstalk.net/wp-content/uploads/images6/4K-Travel-Wallpaper-3840x2160-1.jpg") ;
+  background-size: 100%;
+  background-attachment: fixed;
+  
 }
 
 code {
@@ -18,7 +23,8 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #24292e;
-  background-color: #fff;
+
+
 }
 
 .app {
@@ -27,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 }
 
 input.error {

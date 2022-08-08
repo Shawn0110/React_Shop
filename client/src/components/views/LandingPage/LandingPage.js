@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaCode } from "react-icons/fa";
 import axios from "axios";
-import { Icon, Col, Card, Row, Carousel } from 'antd';
+import { Col, Card, Row, Carousel } from 'antd';
 import Meta from 'antd/lib/card/Meta';
 import ImageSlider from '../../utils/ImageSlider';
 import Checkbox from './Sections/CheckBox';
@@ -143,7 +143,7 @@ function LandingPage() {
         <div style={{ width: '75%', margin: '3rem auto' }}>
 
             <div style={{ textAlign: 'center' }}>
-                <h2>Let's Travel Anywhere <Icon type="rocket" /> </h2>
+                <h2>Choose Your Destination  </h2>
             </div>
 
             {/* Filter */}
