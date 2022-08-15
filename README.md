@@ -9,5 +9,8 @@ In order to use this application
 4. Enter " yarn add npm " in the client directory. (Download frontend dependencies)
 5. Enter "yarn dev run" in the root directory.
 
+Website preview
+https://youtu.be/PQHrIigTvCg
+
 
 Thank you
